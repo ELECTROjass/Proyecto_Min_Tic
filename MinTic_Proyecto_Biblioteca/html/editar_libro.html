@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biblioteca Colegio Gimnasio del Pacifico</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <!-- Hojas de Estilos -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/editar_libro.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- Contenedor Principal -->
+    <div class="container">
+
+        <!--Contenedor Encabezado -->
+        <div class="grid__header">
+            <!--Contenedor Logo Encabezado -->
+            <div class="grid__item">
+                <img src="../img/banner2.png" alt="" width="500px">
+            </div>
+            <!--Fin Contenedor Logo Encabezado -->
+
+            <!--Contenedor Boton Encabezado -->
+            <div class="grid__item2">
+                <form action="../login.html">
+                    <button>Cerrar Sesión</button>
+                </form>
+            </div>
+            <!--Fin Contenedor Boton Encabezado -->
+        </div> <!-- Fin Contenedor Encabezado -->
+
+
+        <!--Contenedor Menu -->
+        <nav class="container__menu">
+
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Agregar</a>
+                    <div class="dropdown-content">
+                        <a href="agregar_autor.html">Autor</a>
+                        <a href="agregar_editorial.html">Editorial</a>
+                        <a href="agregar_libro.html">Libro</a>
+                        <a href="agregar_usuario.html">Usuario</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Editar</a>
+                    <div class="dropdown-content">
+                        <a href="editar_autor.html">Autor</a>
+                        <a href="editar_editorial.html">Editorial</a>
+                        <a href="editar_libro.html">Libro</a>
+                        <a href="editar_usuario.html">Usuario</a>
+                    </div>
+                </li>
+                <li><a href="prestar.html">Prestar</a></li>
+                <li><a href="devolver.html">Devolver</a></li>
+                <li><a href="consultar.html">Consultar Libro</a></li>
+            </ul>
+
+        </nav>
+        <!--Fin Contenedor Menu -->
+        
+
+        <!-- ----- Container Main ------ -->
+        <h2>Editar Libro</h2>
+
+        <!-- ----- Container Main ------ -->
+        <div class="container__main">
+
+            <form action="">
+
+                <div class="form-load">
+
+                    <label for="">Id Libro: </label>
+                    <input type="number" id="id_libro" required>
+
+                    <div class="btn-form">
+                        <input class="btn-submit" type="submit" value="Cargar Libro">
+                    </div>
+
+                </div>
+            </form>
+
+            <hr>
+
+            <form action="">
+
+                <div class="form-one">
+
+                    <label for="">Id Libro: </label>
+                    <input type="number" id="id_libro" disabled>
+
+                    <label for="">ISBN: </label>
+                    <input type="number" id="isbn" required>
+
+                    <label for="">Número de Páginas: </label>
+                    <input type="number" id="num_paginas" required>
+
+                    <label for="">Año de Edición: </label>
+                    <input type="number" id="anio_edicion" required>
+
+                    <label for="">Estado: </label>
+                    <select id="estado">
+                        <option value="disponible">Disponible</option>
+                        <option value="prestamo">En Prestamo</option>
+                    </select>
+
+                    <label for="">Id Autor: </label>
+                    <input type="number" id="id_autor" required>
+
+                </div>
+
+                <div class="form-two">
+                    <label for="">Título: </label>
+                    <input type="text" id="titulo" required>
+
+                    <label for="">Idioma: </label>
+                    <input type="text" id="idioma" required>
+
+                    <label for="">Número de la Edición: </label>
+                    <input type="number" id="num_edicion" required>
+
+                    <label for="">Estante (Ubicación): </label>
+                    <input type="text" id="estante" required>
+
+                    <label for="">Fecha de Devolución: </label>
+                    <input type="date" id="fecha_devolucion">
+
+                    <label for="">Id Editorial: </label>
+                    <input type="number" id="id_editorial" required>
+
+                </div>
+
+
+                <div class="btn-form">
+                    <input class="btn-submit" type="submit" value="Agregar">
+                </div>
+            </form>
+
+        </div> <!-- ----- Fin Container Main ------ -->
+
+        <!-- ----- Container Footer ------ -->
+        <footer class="footer">
+            <div class="pie_izquierdo">
+                <div class="titulo1">AUTOR: </div>
+                <p>Juan Gonzalo Echeverri</p>
+                <p>Para: MinTic 2022</p>
+            </div>
+
+            <div class="pie_centro">
+                <p for="" class="titulo2">HORARIOS DE ATENCIÓN</p>
+                <p class="texto"> Lunes - Viernes <br>08:00 a. m. - 06:00 p. m.</p>
+            </div>
+
+            <div class="pie_derecho">
+                <div class="titulo3">INFORMACIÓN DE CONTACTO</div>
+                <p class="email">gidelpa@gmail.com <br>
+                    www.gidelpa.edu.co</p>
+                <p class="telefonos">+57 (2) 555 - 18 - 12 <br> +57 (318) - 252 - 90 72</p><br>
+                <p class="direccion">Calle 34 Carrera 36</p>
+                <p class="ubicacion">Tuluá, Valle del Cauca, Colombia</p><br>
+            </div>
+        </footer>
+        <!-- -----Fin Container Footer ------ -->
+
+    </div> <!-- Fin Contenedor Principal -->
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biblioteca Colegio Gimnasio del Pacifico</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <!-- Hojas de Estilos -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/devolver.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- Contenedor Principal -->
+    <div class="container">
+        
+        <!--Contenedor Encabezado -->
+        <div class="grid__header">
+            <!--Contenedor Logo Encabezado -->
+            <div class="grid__item">
+                <img src="../img/banner2.png" alt="" width="500px">
+            </div>
+            <!--Fin Contenedor Logo Encabezado -->
+
+            <!--Contenedor Boton Encabezado -->
+            <div class="grid__item2">
+                <form action="../login.html">
+                    <button>Cerrar Sesión</button>
+                </form>
+            </div>
+            <!--Fin Contenedor Boton Encabezado -->
+        </div> <!-- Fin Contenedor Encabezado -->
+
+
+       <!--Contenedor Menu -->
+       <nav class="container__menu">
+
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Agregar</a>
+                <div class="dropdown-content">
+                    <a href="agregar_autor.html">Autor</a>
+                    <a href="agregar_editorial.html">Editorial</a>
+                    <a href="agregar_libro.html">Libro</a>
+                    <a href="agregar_usuario.html">Usuario</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Editar</a>
+                <div class="dropdown-content">
+                    <a href="editar_autor.html">Autor</a>
+                    <a href="editar_editorial.html">Editorial</a>
+                    <a href="editar_libro.html">Libro</a>
+                    <a href="editar_usuario.html">Usuario</a>
+                </div>
+            </li>
+            <li><a href="prestar.html">Prestar</a></li>
+            <li><a href="devolver.html">Devolver</a></li>
+            <li><a href="consultar.html">Consultar Libro</a></li>
+        </ul>
+
+    </nav>
+    <!--Fin Contenedor Menu -->
+
+        <!-- ----- Container Main ------ -->
+        <div class="container__main">
+
+            <h2>Devolución de Libro</h2>
+    
+            <form action="">
+                <label for="">Id Libro: </label>
+                <input type="number" id="id_libro" required>
+
+                <input class="btn-submit" type="submit" value="Devolver">
+
+<!-- El sistema debera tomar la fecha del sistema y guaradarla en la fecha de devolucion de la bd -->
+<!-- nombre del campo en la bd fecha_devolucion -->
+
+<!-- El sistema debera generar un id_devolucion, este campo es autoincremental en la bd -->
+
+<!-- El sistema tomara el id_usuario y el id_prestamo asociado al id_prestamo del prestamo -->
+    
+            </form>
+    
+        </div>  <!-- ----- Fin Container Main ------ -->
+
+
+        <!-- ----- Container Footer ------ -->
+        <footer class="footer">
+            <div class="pie_izquierdo">
+                <div class="titulo1">AUTOR: </div>
+                <p>Juan Gonzalo Echeverri</p>
+                <p>Para: MinTic 2022</p>
+            </div>
+
+            <div class="pie_centro">
+                <p for="" class="titulo2">HORARIOS DE ATENCIÓN</p>
+                <p class="texto"> Lunes - Viernes <br>08:00 a. m. - 06:00 p. m.</p>
+            </div>
+
+            <div class="pie_derecho">
+                <div class="titulo3">INFORMACIÓN DE CONTACTO</div>
+                <p class="email">gidelpa@gmail.com <br>
+                    www.gidelpa.edu.co</p>
+                <p class="telefonos">+57 (2) 555 - 18 - 12 <br> +57 (318) - 252 - 90 72</p><br>
+                <p class="direccion">Calle 34 Carrera 36</p>
+                <p class="ubicacion">Tuluá, Valle del Cauca, Colombia</p><br>
+            </div>
+        </footer>
+        <!-- -----Fin Container Footer ------ -->
+
+    </div> <!-- Fin Contenedor Principal -->
+
+</body>
+
+</html>

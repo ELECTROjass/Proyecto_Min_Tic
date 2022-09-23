@@ -1,0 +1,227 @@
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+/*------------ Contenedor Principal -----------*/
+
+.container {
+  width: 90%;
+  margin: auto;
+  box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.75);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 22px;
+}
+
+/*------------ Encabezado -----------*/
+
+.grid__header {
+  display: grid;
+  grid-template-columns: minmax(200px, 3fr) minmax(100px, 1fr);
+}
+
+.grid__item {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.grid__item2 {
+  align-self: center;
+  justify-self: center;
+}
+
+
+/*------------ Menu -----------*/
+nav {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  display: inline-block;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #cccccc;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #a5a5ae;
+  border: solid grey 2px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*------------ Container Main ------------*/
+
+.container__main {
+  margin: auto;
+  margin-top: 30px;
+  width: 400px;
+  padding-bottom: 40px;
+  border-radius: 45px;
+  background: rgb( 69, 179, 157);
+  box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container__main h2 {
+  margin: 0;
+  text-align: center;
+  padding: 40px;
+}
+
+.container__main form {
+  width: 300px;
+  display: block;
+  margin: auto;
+}
+
+.container__main form label{
+display: block;
+margin: auto;
+padding-left: 54px;
+
+}
+
+.container__main form input{
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  height: 35px;
+  width: 200px;
+  padding-left: 10px;
+}
+
+ .btn-submit{
+  background-color: #0E6251;
+  color: white;
+  width: 80px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+} 
+
+input[type=submit]:hover {
+  background-color: #187c68;
+}
+
+
+
+
+
+/*------------ Container Footer ------------*/
+
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  background-color: rgb(54, 54, 54);
+  border-radius: 0px 0px 22px 22px;
+  color: #fff;
+}
+
+.footer {
+  display: grid;
+  gap: 5px;
+  grid-template:
+    "pie_izquierdo" auto
+    "pie_centro" auto
+    "pie_derecho" auto;
+}
+
+.pie_izquierdo {
+  grid-area: pie_izquierdo;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.pie_izquierdo .titulo1 {
+  color: yellow;
+  margin-bottom: 20px;
+}
+
+.pie_centro {
+  grid-area: pie_centro;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.pie_centro .titulo2 {
+  color: yellow;
+  margin-bottom: 20px;
+}
+
+.pie_centro .texto {
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+
+.pie_derecho {
+  grid-area: pie_derecho;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.pie_derecho .titulo3 {
+  color: yellow;
+  margin-bottom: 20px;
+}
+
+.pie_derecho .email {
+  margin-bottom: 20px;
+}
+
+.pie_derecho .web {
+  margin-bottom: 20px;
+}
+
+@media (min-width:934px) {
+
+  .footer {
+    display: grid;
+    gap: 5px;
+    grid-template:
+      "pie_izquierdo pie_centro pie_derecho" auto;
+
+  }
+}
